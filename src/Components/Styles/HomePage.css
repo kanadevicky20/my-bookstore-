@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    background: linear-gradient(135deg, #000566, #8f94fb); /* Gradient background */
+
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* Home page container */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    padding: 20px;
+}
+
+/* Home page title */
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: slideInDown 1.5s ease-out;
+}
+
+/* Home page description */
+.home-description {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    animation: fadeInUp 1.5s ease-out;
+    font-style: italic;
+}
+
+/* Explore button styling */
+.explore-button {
+    background-color: #5b5857;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+    background-color: #ff495a;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2.5rem;
+    }
+
+    .home-description {
+        font-size: 1.2rem;
+    }
+
+    .explore-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

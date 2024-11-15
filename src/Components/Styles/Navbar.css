@@ -1,0 +1,52 @@
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #1d1f38, #000569); /* Gradient background for the navbar */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
+    transition: background 0.3s ease-in-out; /* Smooth transition for background change */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform effect */
+}
+
+/* Hover Effect for Links */
+.navbar a:hover {
+    color: #ff495a; /* Change link color on hover */
+    transform: scale(1.1); /* Slight scale-up effect */
+    text-decoration: underline;
+}
+
+/* Navbar logo */
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+}

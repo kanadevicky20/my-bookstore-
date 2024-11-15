@@ -1,0 +1,48 @@
+/* dark-mode.css */
+
+/* Default Light Mode Styles */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.book-list {
+    background-color: #ffffff;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.book-list.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+button.dark-mode {
+    background-color: #444;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #666;
+}

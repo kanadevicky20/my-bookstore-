@@ -1,0 +1,97 @@
+/* Keyframes for animated background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Page Container */
+.book-list {
+    background: linear-gradient(135deg, #000566, #8f94fb); /* Gradient background */
+
+    /* background: linear-gradient(-45deg, #8b5a2b, #d2b48c, #c19a6b, #deb887); */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Title */
+.book-list-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Books Container */
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+/* Book Cards Styling */
+.book-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Book Title and Author */
+.book-card .book-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.book-card .book-author {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+}
+
+/* Price */
+.book-card .book-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffb84d;
+}
+
+/* Add some responsive styling for small screens */
+@media (max-width: 768px) {
+    .book-list-title {
+        font-size: 2rem;
+    }
+
+    .book-card {
+        padding: 10px;
+    }
+
+    .books {
+        width: 90%;
+    }
+}
