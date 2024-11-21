@@ -3,11 +3,10 @@ import '../Components/Styles/BookCard.css';
 import { useNavigate } from 'react-router-dom';
 
 function BookCard({ book }) {
-
     const Navigate=useNavigate();
 
-    function handleClick(){
-        Navigate();
+    function handleClick(e){
+        Navigate('/story',{state:{id:e.target.value}});
     }
 
     return (
@@ -17,7 +16,7 @@ function BookCard({ book }) {
             <p>Author: {book.author}</p>
             {/* <p>Price: {book.price}</p> */}
             <p className="book-description">{book.description}</p>
-            <button className="buy-now-button" onClick={handleClick}>Open</button>
+            <button className="buy-now-button" value={book?.id} onClick={handleClick}>Open</button>
         </div>
     );
 }

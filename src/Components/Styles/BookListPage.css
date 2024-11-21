@@ -13,7 +13,8 @@
 
 /* Page Container */
 .book-list {
-    background: linear-gradient(135deg, #000566, #8f94fb); /* Gradient background */
+    background: linear-gradient(135deg, #ff9f30, #8f94fb); /* Gradient background */
+    /* background: linear-gradient(135deg, #000566, #8f94fb); Gradient background */
 
     /* background: linear-gradient(-45deg, #8b5a2b, #d2b48c, #c19a6b, #deb887); */
     background-size: 400% 400%;

@@ -1,0 +1,45 @@
+.story-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(to bottom, #fefae0, #f5deb3); /* Book-like gradient */
+  border: 1px solid #e1c699; /* Subtle border for the page */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif; /* Classic book font */
+  height: 400px; /* Fixed height for scrollable content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  justify-items: baseline;
+}
+
+.story-title {
+  font-size: 2.5rem;
+  color: #4a2e19; /* Dark brown for book-like titles */
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  border-bottom: 2px solid #e1c699; /* Underline like a chapter header */
+  padding-bottom: 0.5rem;
+
+}
+
+.story-content {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #3e2c20; /* Dark brown for text */
+  text-align: justify;
+  text-indent: 2em; /* Indent first line of each paragraph */
+  padding-right: 1rem; /* Add space for the scrollbar */
+}
+
+.story-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.story-container::-webkit-scrollbar-thumb {
+  background: #e1c699; /* Scrollbar thumb color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.story-container::-webkit-scrollbar-thumb:hover {
+  background: #d4a76f; /* Thumb color on hover */
+}

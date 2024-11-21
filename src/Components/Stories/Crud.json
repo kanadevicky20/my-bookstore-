@@ -1,0 +1,61 @@
+const fs = require('fs');
+const path = './data.json'; // Path to your JSON file
+
+// Read JSON File
+function readData() {
+  const data = fs.readFileSync(path, 'utf-8');
+  return JSON.parse(data);
+}
+
+// Write JSON File
+function writeData(data) {
+  fs.writeFileSync(path, JSON.stringify(data, null, 2), 'utf-8');
+}
+
+// CREATE
+function createItem(newItem) {
+  const data = readData();
+  data.push(newItem);
+  writeData(data);
+  console.log('Item added successfully.');
+}
+
+// READ
+function readItem(id) {
+  const data = readData();
+  const item = data.find((item) => item.id === id);
+  console.log(item ? item : 'Item not found.');
+}
+
+// UPDATE
+function updateItem(id, updatedFields) {
+  const data = readData();
+  const index = data.findIndex((item) => item.id === id);
+  if (index !== -1) {
+    data[index] = { ...data[index], ...updatedFields };
+    writeData(data);
+    console.log('Item updated successfully.');
+  } else {
+    console.log('Item not found.');
+  }
+}
+
+// DELETE
+function deleteItem(id) {
+  const data = readData();
+  const filteredData = data.filter((item) => item.id !== id);
+  if (data.length !== filteredData.length) {
+    writeData(filteredData);
+    console.log('Item deleted successfully.');
+  } else {
+    console.log('Item not found.');
+  }
+}
+
+// Usage Examples
+// Uncomment below to test the functions one by one:
+
+// createItem({ id: 3, name: 'Charlie', age: 28 });
+// readItem(1);
+// updateItem(2, { name: 'Bobby', age: 35 });
+// deleteItem(1);

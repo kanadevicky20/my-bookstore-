@@ -56,7 +56,7 @@ const books = [
 
 function BookListPage() {
     return (
-        <div className="book-list">
+        <div className="home">
             <h1 className="book-list-title">Books Available</h1>
             <div className="books">
                 {books.map((book) => (

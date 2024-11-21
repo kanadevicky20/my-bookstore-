@@ -4,12 +4,13 @@ import '../Components/Styles/Navbar.css';
 function Navbar() {   
     return (
         <nav className="navbar">
-            <h1>My Book Store</h1>
+            <h1>My Stories...</h1>
             <div>
                 <Link to="/">Home</Link>
                 <Link to="/books">Books</Link>
                 <Link to='/about'>About</Link>
                 <Link to='/contact'>Contact</Link>
+                <Link to='/admin'>Admin</Link>
                 <Link>
                 </Link>
             </div>

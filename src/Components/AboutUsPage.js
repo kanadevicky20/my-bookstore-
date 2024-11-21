@@ -3,7 +3,7 @@ import '../Components/Styles/AboutUsPage.css';
 
 function AboutUsPage() {
     return (
-        <div className="about-us">
+        <div className="home">
             <h1 className="about-title">About Us</h1>
             <p className="about-description">
                 Welcome to our Book Store! We are passionate about books and aim to bring you a wide variety of books, from timeless classics to the latest bestsellers.
@@ -22,11 +22,7 @@ function AboutUsPage() {
                         <h3>K_Vicky</h3>
                         <p>Founder</p>
                     </div>
-                    <div className="team-member">
-                        <img src="https://via.placeholder.com/150" alt="Team Member" className="team-member-img" />
-                        <h3>K_Vicky</h3>
-                        <p>Founder</p>
-                    </div>                   
+                                 
                 </div>
             </div>
         </div>

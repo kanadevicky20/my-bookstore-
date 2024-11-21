@@ -1,12 +1,14 @@
 /* General body styling */
 body {
-    background: linear-gradient(135deg, #000566, #8f94fb); /* Gradient background */
+    background: linear-gradient(135deg, #ff9f30, #8f94fb); /* Gradient background */
+
+    /* background: linear-gradient(135deg, #000566, #8f94fb); Gradient background */
 
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #fff;
     overflow-x: hidden;
-    height: 100vh;
+    height: '';
 }
 
 /* Home page container */
@@ -15,10 +17,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
-    padding: 20px;
+    padding: 150px;
 }
 
 /* Home page title */
@@ -53,7 +55,7 @@ body {
 }
 
 .explore-button:hover {
-    background-color: #ff495a;
+    background-color: #ff9e02;
     transform: scale(1.1);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
